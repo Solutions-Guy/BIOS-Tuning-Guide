@@ -43,7 +43,7 @@ $ ./sum -c ChangeBiosCfg --file <file_name> --reboot
 
 # BIOS Settings Dependencies
 
-Some BIOS settings are dependent on other BIOS settings. In the BIOS menu, the settings will behighlighted or grayed out to indicate whether they are configurable. However, the SUM BIOS
+Some BIOS settings are dependent on other BIOS settings. In the BIOS menu, the settings will be highlighted or grayed out to indicate whether they are configurable. However, the SUM BIOS
 management commands do not show highlighted or grayed out settings. Therefore, it is important to know the BIOS setting dependencies when using the SUM BIOS management commands.
 
 Note:
