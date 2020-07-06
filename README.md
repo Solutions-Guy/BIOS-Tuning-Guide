@@ -21,21 +21,25 @@ Below is an example of how to get and change the BIOS settings with the SUM util
 1. Get Current BIOS Settings
 The following show OOB and In-Band syntax for getting the current BIOS settings.
 
+```yml
 OOB Syntax:
 $ ./sum -i <IP or hostname> -u <username> -p <password> -c GetCurrentBiosCfg --file <file_name>
 
 In-Band Syntax:
 $ ./sum -c GetCurrentBiosCfg --file <file_name>
+```
 
 2. Change BIOS Settings
 
 The following show OOB and In-Band syntax for changing the BIOS settings.
 
+```yml
 OOB Syntax:
 $ ./sum -i <IP or hostname> -u <username> -p <password> -c ChangeBiosCfg --file <file_name> --reboot
 
 In-Band Syntax:
 $ ./sum -c ChangeBiosCfg --file <file_name> --reboot
+```
 
 # BIOS Settings Dependencies
 
@@ -58,31 +62,23 @@ BIOS Configuration Fail Message
 This section shows the error message when dependencies are not met. For example, using ChangeBiosCfg to set the CPU C6 Report value to “Disabled,” will return the following output if Power Technology is set to “Disable.” Power Technology should be set to “Custom” in order to change the
 value of the CPU C6 Report via SUM Tool.
 
+```yml
 OOB Example with a missing dependency:
 $ ./sum -i 172.31.xx.xx -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file MissingDependency.xml --reboot
+```
 
-Figure 13: Sample error message from SUM Utility when dependencies are not met.
+![](https://github.com/Solutions-Guy/BIOS-Tuning-Guide/blob/master/Sample%20error%20message%20message%20from%20SUM%20Utility%20when%20dependencies%20are%20not%20met.png)
+<p align="center">Sample error message from SUM Utility when dependencies are not met</p>
 
 # BIOS Configuration Success Message
 
 If all dependencies are met and the ChangeBiosCfg command executes successfully, the message “The BIOS configuration is updated for <IP address>” will appear.
 
-OOB Example with recommended latency-sensitive BIOS settings covered in section 3.3:
-$ ./sum -i 172.31.xx.xx -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file LowLatency.xml --reboot
-
-Figure 14: Sample success message from SUM Utility
-
-
-
 
 ```yml
-Method: [GET]
-
-URL: https://$BMC_IP/redfish/v1/Systems/1
+OOB Example with recommended latency-sensitive BIOS settings covered in section 3.3:
+$ ./sum -i 172.31.xx.xx -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file LowLatency.xml --reboot
 ```
 
-![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20BIOS%20from%20Talend%20Chrome-based%20App.png)
-<p align="center">Check BIOS from Talend Chrome-based app</p>
-
-![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20BIOS%20Version%20from%20Response.PNG)
-<p align="center">Confirm BIOS Version from Response</p>
+![](https://github.com/Solutions-Guy/BIOS-Tuning-Guide/blob/master/Sample%20success%20message%20from%20SUM%20Utility.png)
+<p align="center">Sample success message from SUM Utility</p>
