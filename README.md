@@ -57,7 +57,7 @@ It is critical to understand dependencies when using the SUM BIOS management com
 
 By default, Power Technology is set to Energy Efficient Mode. Using the SUM Tool to execute a BIOS change that does not align with the dependencies will result in an error. 
 
-BIOS Configuration Fail Message
+# Understanding the BIOS Configuration Fail Message
 
 This section shows the error message when dependencies are not met. For example, using ChangeBiosCfg to set the CPU C6 Report value to “Disabled,” will return the following output if Power Technology is set to “Disable.” Power Technology should be set to “Custom” in order to change the
 value of the CPU C6 Report via SUM Tool.
