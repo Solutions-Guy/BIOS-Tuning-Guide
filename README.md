@@ -64,7 +64,7 @@ value of the CPU C6 Report via SUM Tool.
 
 ```yml
 OOB Example with a missing dependency:
-$ ./sum -i 172.31.xx.xx -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file MissingDependency.xml --reboot
+$ ./sum -i <IP or hostname> -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file MissingDependency.xml --reboot
 ```
 
 ![](https://github.com/Solutions-Guy/BIOS-Tuning-Guide/blob/master/Sample%20error%20message%20message%20from%20SUM%20Utility%20when%20dependencies%20are%20not%20met.PNG)
@@ -77,7 +77,7 @@ If all dependencies are met and the ChangeBiosCfg command executes successfully,
 
 ```yml
 OOB Example with recommended latency-sensitive BIOS settings covered in section 3.3:
-$ ./sum -i 172.31.xx.xx -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file LowLatency.xml --reboot
+$ ./sum -i <IP or hostname> -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file LowLatency.xml --reboot
 ```
 
 ![](https://github.com/Solutions-Guy/BIOS-Tuning-Guide/blob/master/Sample%20success%20message%20from%20SUM%20Utility.PNG)
