@@ -1,5 +1,4 @@
-# BIOS-Tuning-Guide
-BIOS Tuning a BigTwin SuperServer
+# BIOS-Tuning-Guide-for-BigTwin-SuperServer
 
 Supermicro Update Manager (SUM) is a command line interface utility for scripting the deployment of BIOS options from a centralized management server. For more details on how to use the SUM tool,
 please refer to the SUM User Guide on the Supermicro website. This section will provide basic examples of how to use SUM to tune the X11 Dual Socket Motherboards.
