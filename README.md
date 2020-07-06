@@ -48,12 +48,12 @@ management commands do not show highlighted or grayed out settings. Therefore, i
 
 Note:
 It is critical to understand dependencies when using the SUM BIOS management commands. For example, the following settings cannot be changed unless Power Technology is set to Custom.
-• CPU P State Control
-• Hardware PM State Control
-• CPU C State Control
-• Package C State Control
-• CPU T State Control
-• Energy and Performance Bias
+- CPU P State Control
+- Hardware PM State Control
+- CPU C State Control
+- Package C State Control
+- CPU T State Control
+- Energy and Performance Bias
 
 By default, Power Technology is set to Energy Efficient Mode. Using the SUM Tool to execute a BIOS change that does not align with the dependencies will result in an error. 
 
