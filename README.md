@@ -9,10 +9,10 @@ Pre-requisites:
 - Setting Up OOB Managed Systems.
 - Activated License Key for Managed Systems on all server nodes. 
 
-*It is common practice to manually configure the BIOS, then export the settings into an XML file by using
+Important Notes:
+- It is common practice to manually configure the BIOS, then export the settings into an XML file by using
 the GetCurrentBiosCfg command.
-
-** Once a “golden image” has been exported into an XML format, ChangeBiosCfg is the recommended
+- Once a “golden image” has been exported into an XML format, ChangeBiosCfg is the recommended
 command to change the BIOS configuration.
 
 # BIOS Management Command Example
