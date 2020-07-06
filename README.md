@@ -68,7 +68,7 @@ $ ./sum -i <IP or hostname> -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file Missing
 ```
 
 ![](https://github.com/Solutions-Guy/BIOS-Tuning-Guide/blob/master/Sample%20error%20message%20message%20from%20SUM%20Utility%20when%20dependencies%20are%20not%20met.PNG)
-<p align="center">Sample error message from SUM Utility when dependencies are not met</p>
+<p align="center">Error message from SUM Utility when dependencies are not met</p>
 
 # BIOS Configuration Success Message
 
@@ -81,4 +81,4 @@ $ ./sum -i <IP or hostname> -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file LowLate
 ```
 
 ![](https://github.com/Solutions-Guy/BIOS-Tuning-Guide/blob/master/Sample%20success%20message%20from%20SUM%20Utility.PNG)
-<p align="center">Sample success message from SUM Utility</p>
+<p align="center">Success message from SUM Utility</p>
