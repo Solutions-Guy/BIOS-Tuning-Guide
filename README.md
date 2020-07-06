@@ -76,7 +76,7 @@ If all dependencies are met and the ChangeBiosCfg command executes successfully,
 
 
 ```yml
-OOB Example with recommended latency-sensitive BIOS settings covered in section 3.3:
+OOB Example with recommended latency-sensitive BIOS settings:
 $ ./sum -i <IP or hostname> -u <ADMIN> -p <PASS> -c ChangeBiosCfg --file LowLatency.xml --reboot
 ```
 
